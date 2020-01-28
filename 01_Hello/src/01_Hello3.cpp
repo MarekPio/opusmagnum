@@ -8,10 +8,27 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
+/*
+ * Program na przeliczanie wysokosci podanej w stopach na wysokosc w metrach.
+ * Cwiczymy tu operacje wczytywania z klawiatury i wypisywania na ekranie.
+ */
+
 #include <iostream>
 using namespace std;
 
-int main() {
-	cout << "Witamy na pokładzie" << endl;
+int main()
+{
+	int stopy; 								// Do przechowywania danej wejsciowej
+	double metry; 							// Do wpisania wyniku
+	double przelicznik = 0.3; 				// przelicznik: stopy na metry
+
+	cout<<"Podaj wysokosc w stopach: ";
+	cin>>stopy; 							// przyjecie danej z klawiatury
+
+	metry = stopy * przelicznik; 			// wlasciwe przeliczanie
+	cout<<"\n";
+
+	// Wypisanie wynikow
+	cout<<stopy<<" stop - to jest: "<<metry<<" metrow\n";
 	return 0;
 }
